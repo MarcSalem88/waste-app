@@ -4,7 +4,7 @@ const SkipsList = ({ skips, selectedSkip, setSelectedSkip }) => {
   return (
     <>
       <div className="container mt-4">
-        <ul className="list-group" style={{ maxHeight: '70vh', overflowY: 'auto' }}>
+        <ul className="list-group" style={{ maxHeight: '70dvh', overflowY: 'auto' }}>
           {skips.map((item) => (
             <li
               key={item.id}

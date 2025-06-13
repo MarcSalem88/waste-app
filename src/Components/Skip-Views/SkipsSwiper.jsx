@@ -64,7 +64,7 @@ const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
                           bottom: 20,
                           background: '#111',
                           color: 'white',
-                          fontSize: '0.75em',
+                          fontSize: '0.6em',
                           padding: '2px 8px 2px 6px',
                           borderRadius: 4,
                           fontWeight: 600,
