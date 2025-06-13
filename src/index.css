@@ -4,7 +4,7 @@
   --tertiary-color: #1c1c1c;
   --on-tertiary-color: #3a3a3a;
   --text-color: white;
-  --base-font-size: 14px;
+  --base-font-size: 16px;
 }
 
 body, html {
@@ -12,15 +12,15 @@ body, html {
 }
 
 .card, .list-group-item, .Button, .btn, .card-title, .mb-1, .mb-2, .vat, .form-label, .form-control, .form-select, .navbar, .container, .row, .col, .d-flex, .d-block, .d-inline, .d-inline-block, .d-md-block, .d-md-inline, .d-md-inline-block {
-  font-size: 0.97em !important;
+  font-size: 1.00em !important;
 }
 
 @media (max-width: 767.98px) {
   :root {
-    --base-font-size: 13px;
+    --base-font-size: 15px;
   }
   .card, .list-group-item, .Button, .btn, .card-title, .mb-1, .mb-2, .vat, .form-label, .form-control, .form-select, .navbar, .container, .row, .col, .d-flex, .d-block, .d-inline, .d-inline-block, .d-md-block, .d-md-inline, .d-md-inline-block {
-    font-size: 0.93em !important;
+    font-size: 1em !important;
   }
 }
 
@@ -68,7 +68,7 @@ body {
 
 .card img,
 .img-fluid.rounded.mb-3.w-100 {
-  height: 140px !important;
+  height: 170px !important;
   max-width: 100%;
   object-fit: cover;
 }

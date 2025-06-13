@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
   return (
-    <div className="container mt-4 d-flex align-items-center justify-content-center" style={{ height: '70vh', overflowY: 'auto' }}>
+    <div className="container mt-4 d-flex align-items-center justify-content-center" style={{ height: '70dvh', overflowY: 'auto' }}>
       <div className='w-100'>
         <Swiper
           spaceBetween={35}
@@ -19,7 +19,7 @@ const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
           navigation
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
-          style={{ padding: '0 40px 40px 40px' }} // Add space for arrows and pagination
+          style={{ padding: '0 40px 40px 40px' }}
         >
           {skips.map((item) => (
             <SwiperSlide key={item.id}>
@@ -27,7 +27,6 @@ const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
                 className={`card ${selectedSkip === item.id ? 'border-primary shadow' : ''}`}
                 style={{
                   cursor: 'pointer',
-                  minHeight: 180,
                   transition: 'box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background 0.2s ease-in-out',
                   background: selectedSkip === item.id ? 'rgba(0,55,193,0.08)' : undefined
                 }}
@@ -41,7 +40,6 @@ const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
                       className="img-fluid rounded mb-3 w-100"
                       style={{ objectFit: 'cover', height: 200, width: '100%' }}
                     />
-                    {/* Skip size badge */}
                     <div
                       style={{
                         position: 'absolute',
@@ -58,7 +56,6 @@ const SkipsSwiper = ({ skips, selectedSkip, setSelectedSkip }) => {
                     >
                       {item.size} Yards
                     </div>
-
                     {!item.allowed_on_road && (
                       <div
                         style={{

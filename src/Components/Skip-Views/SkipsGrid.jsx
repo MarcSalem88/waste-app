@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkipsGrid = ({ skips, selectedSkip, setSelectedSkip }) => {
   return (
-    <div className="container p-4 mt-4 " style={{ height: '70vh', overflowY: 'auto', borderRadius: 8 }}>
+    <div className="container px-0 py-5 mt-4 " style={{ height: '70dvh', overflowY: 'auto', borderRadius: 8 }}>
       <div className="row g-3">
         {skips.map((item) => (
           <div
@@ -28,7 +28,7 @@ const SkipsGrid = ({ skips, selectedSkip, setSelectedSkip }) => {
                     className="img-fluid rounded mb-3 w-100"
                     style={{ objectFit: 'cover', height: 200, width: '100%' }}
                   />
-                  {/* Skip size badge */}
+                  
                   <div
                     style={{
                       position: 'absolute',
@@ -45,7 +45,7 @@ const SkipsGrid = ({ skips, selectedSkip, setSelectedSkip }) => {
                   >
                     {item.size} Yards
                   </div>
-                  {/* Not allowed on road warning */}
+                 
                   {!item.allowed_on_road && (
                     <div
                       style={{

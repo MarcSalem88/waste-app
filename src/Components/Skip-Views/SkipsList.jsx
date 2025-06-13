@@ -14,14 +14,14 @@ const SkipsList = ({ skips, selectedSkip, setSelectedSkip }) => {
                 background: 'var(--tertiary-color)',
                 color: 'var(--text-color)',
                 border: selectedSkip === item.id ? '2px solid var(--primary-color)' : 'none',
-                minHeight: 120,
-                height: 'auto', // Ensure height always fits content
+               
+                height: 'auto',
                 padding: '1.5rem 1rem',
                 borderRadius: 12,
                 marginBottom: 24,
                 transition: 'box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, background 0.2s ease-in-out',
                 boxShadow: selectedSkip === item.id ? '0 10px 10px 0 var(--secondary-color)' : undefined,
-                overflow: 'visible' // Ensure content is never clipped
+                overflow: 'visible'
               }}
               onClick={() => setSelectedSkip(selectedSkip === item.id ? null : item.id)}
             >
@@ -29,7 +29,7 @@ const SkipsList = ({ skips, selectedSkip, setSelectedSkip }) => {
                 <img
                   src={`https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/${item.size}-yarder-skip.jpg`}
                   alt="Skip"
-                  className="rounded mb-3 mb-md-0"
+                  className="rounded"
                   style={{ width: 90, height: 90, objectFit: 'cover', flexShrink: 0, marginRight: 16 }}
                 />
                 <div className="flex-grow-1">
@@ -93,7 +93,7 @@ const SkipsList = ({ skips, selectedSkip, setSelectedSkip }) => {
           ))}
         </ul>
       </div>
-      { /* Remove the fixed bottom bar, now handled in SelectSkip.jsx */ }
+     
     </>
   );
 };
